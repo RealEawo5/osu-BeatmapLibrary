@@ -1,0 +1,62 @@
+===================================
+
+beatmapLibrary.py Documentaion
+
+===================================
+
+"beatmapLibrary.get_beatmap(beatmapID=0)" returns list() type with 3 items
+
+[0]: BeatmapID      # Integer
+[1]: BeatmapData    # Dictionary
+[2]: BeatmapExists  # Boolean
+
+
+
+=[0]===============================
+
+BeatmapID is the "beatmapID" entered into "get_beatmap()" command
+
+
+
+=[1]===============================
+
+BeatmapData is the returned data from the beatmap page on "https://osu.ppy.sh/b/{BeatmapID}"
+
+The returned data in the dictionary is set up as followed:
+ - 'artist'		: String                                                           
+ - 'artist unicode'	: Unicode String
+ - 'creator'		: String
+ - 'favourite count'	: Integer
+ - 'hype'		: Integer
+ - 'nsfw'		: Boolean
+ - 'play count'		: Integer
+ - 'source'		: String
+ - 'status'		: String
+ - 'title'		: String
+ - 'title unicode'	: Unicode String
+ - 'track id'		: Integer
+ - 'user id'		: Integer
+ - 'video'		: Boolean
+ - 'download disabled'	: Boolean
+ - 'more information'	: String
+ - 'bpm'		: Float
+ - 'can be hyped'	: Boolean
+ - 'discussion enabled'	: Boolean
+ - 'discussion locked'	: Boolean
+ - 'is scoreable'	: Boolean
+ - 'last updated'      	: Timestamp
+ - 'legacy thread url' 	: Url
+ - 'ranked'            	: Integer
+ - 'ranked date'       	: Timestamp 
+ - 'storyboard'	       	: Boolean
+ - 'submitted date'	: Timestamp
+ - 'tags'		: String
+
+NOTE! All data inside the dictionary is stored as a STRING! The dataformat after the ":" is just to show what each item in the dictionary is easily converted to!
+
+
+
+=[2]===============================
+
+If the "beatmapID" entered into "get_beatmap()" command is a valid BeatmapID
+
