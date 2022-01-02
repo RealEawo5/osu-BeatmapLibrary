@@ -1,4 +1,4 @@
-import urllib.request
+import requests
 
 
 # ssqWD = '<meta name="description" content="'  # Start Search Query Website Data
